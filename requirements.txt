@@ -1,0 +1,4 @@
+opencv-python-headless
+numpy
+
+# Python >= 3.7 
