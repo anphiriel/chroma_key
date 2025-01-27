@@ -1,4 +1,4 @@
-# chroma_key: Chroma Key Compositor Demo App
+## chroma_key: Chroma Key Compositor Demo App
 
 This repository showcases a demonstration of greenscreen (chroma‐key) compositing using Python, OpenCV, and Tkinter. 
 
@@ -29,7 +29,7 @@ This repository showcases a demonstration of greenscreen (chroma‐key) composit
 
 3. **Preview & Export**  
    - **Play** the fully composited video in real-time (or approx).  
-   - **Export** to `.mp4`.
+   - **Export** final video.
 
 ---
 
@@ -91,6 +91,7 @@ Mac, Windows, Linux
 ## Credits & License
 
 Author: Anelia Gaydardzhieva (https://github.com/Anelia1)
+
 (c) 2025, MIT License
 
 ## Contact
