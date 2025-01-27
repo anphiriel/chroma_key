@@ -103,4 +103,4 @@ Author: Anelia Gaydardzhieva (https://github.com/Anelia1)
 
 ### Contact
 
-For questions, suggestions, or contributions, please open an issue in this repository or reach out via GitHub. Feedback is welcomed to further showcase the potential of this Chroma Key Compositor Demo App.
+For questions, suggestions, or contributions, please open an issue in this repository or reach out via GitHub. Feedback is welcomed.
