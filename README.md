@@ -6,14 +6,14 @@ This repository showcases a demonstration of greenscreen (chroma‐key) composit
 
 ### Overview
 
-1. **`chroma_key_core.py`**  
-   Contains the **core chroma‐key and compositing logic** (greenscreen removal).  
+1. **`chroma_key_core.py`**
+   - Contains the **core chroma‐key and compositing logic** (greenscreen removal).  
    - Implements the primary function `perform_chroma_key(...)` to blend a foreground (greenscreen) video with a background (image or second video).  
    - Includes an **optional advanced feature** `apply_gamma_correction(...)` for demonstrating color adjustment expertise.  
    - Strictly computational routines—no GUI code here.
 
-2. **`chroma_key_gui.py`**  
-   Provides a **Tkinter‐based interface** for loading videos, picking the key color, adjusting various parameters (tolerance, softness, brightness, contrast), and exporting the final composited video.  
+3. **`chroma_key_gui.py`**
+   - Provides a **Tkinter‐based interface** for loading videos, picking the key color, adjusting various parameters (tolerance, softness, brightness, contrast), and exporting the final composited video.  
 
 ---
 
@@ -61,34 +61,29 @@ python chroma_key_gui.py
 ### Usage
 
 1. **Load Foreground Video**
-
-- Click “Load Foreground Video” and select a .mp4 file, ideally with a greenscreen or solid background.
+   - Click “Load Foreground Video” and select a .mp4 file, ideally with a greenscreen or solid background.
 
 3. **Pick Chroma Key Color**
-
-- Optionally click “Pick Chroma Key Color” to open a window where you drag a bounding box around the background color to remove. The default is set to green (0, 255, 0).
+   - Optionally click “Pick Chroma Key Color” to open a window where you drag a bounding box around the background color to remove. The default is set to green.
 
 5. **Load Background**
-
-- Click “Load Background” and choose either Image or Video as the source.
-- If video, frames are preloaded for short background clips.
-- If image, it remains static throughout the composite.
+   - Click “Load Background” and choose either Image or Video as the source.
+   - If video, frames are preloaded for short background clips.
+   - If image, it remains static throughout the composite.
 
 7. **Adjust Sliders**
-
-- Tolerance: how wide the color range is around the chosen key color.
-- Edge Softness: the blur/feather around edges for seamless compositing.
-- Color Spill: reduce any green or color cast on the foreground subject.
-- Brightness / Contrast: separate sliders for foreground and background.
+   - Tolerance: how wide the color range is around the chosen key color.
+   - Edge Softness: the blur/feather around edges for seamless compositing.
+   - Color Spill: reduce any green or color cast on the foreground subject.
+   - Brightness / Contrast: separate sliders for foreground and background.
 
 9. **Preview**
-
-- Click “Preview Composited Video” to watch the entire video with the background replaced.
-- If “Reverse Background” is checked, the background video frames are played in reverse.
-- Expect some delay of the preview video on lower-performing devices (final export after processing is standard speed).
+    - Click “Preview Composited Video” to watch the entire video with the background replaced.
+    - If “Reverse Background” is checked, the background video frames are played in reverse.
+    - Expect some delay of the preview video on lower-performing devices (final export after processing is standard speed).
 
 11. **Export**
-- Click “Export Composited Video” to render and save the final output.
+    - Click “Export Composited Video” to render and save the final output.
 
 ---
 
