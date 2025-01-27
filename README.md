@@ -4,7 +4,7 @@ This repository showcases a demonstration of greenscreen (chroma‐key) composit
 
 ---
 
-## Overview
+### Overview
 
 1. **`chroma_key_core.py`**  
    Contains the **core chroma‐key and compositing logic** (greenscreen removal).  
@@ -17,7 +17,7 @@ This repository showcases a demonstration of greenscreen (chroma‐key) composit
 
 ---
 
-## Key Features
+### Key Features
 
 1. **Greenscreen Removal**  
    - Dynamically pick a target color (e.g. green) to remove from the foreground video.  
@@ -33,7 +33,7 @@ This repository showcases a demonstration of greenscreen (chroma‐key) composit
 
 ---
 
-## Installation
+### Installation
 
 1. **Clone or Download** this repository:
 ```bash
@@ -56,44 +56,56 @@ pip install opencv-python numpy
 ```bash
 python chroma_key_gui.py
 ```
+---
 
-## Usage
+### Usage
 
-1. Load Foreground Video
-Click “Load Foreground Video” and select a .mp4 file, ideally with a greenscreen or solid background.
+1. **Load Foreground Video**
 
-3.	Pick Chroma Key Color
-Optionally click “Pick Chroma Key Color” to open a window where you drag a bounding box around the background color to remove. The default is set to green (0, 255, 0).
+- Click “Load Foreground Video” and select a .mp4 file, ideally with a greenscreen or solid background.
 
-5.	Load Background
-Click “Load Background” and choose either Image or Video as the source.
-If video, frames are preloaded for short background clips.
-If image, it remains static throughout the composite.
+3. **Pick Chroma Key Color**
 
-7.	Adjust Sliders
-Tolerance: how wide the color range is around the chosen key color.
-Edge Softness: the blur/feather around edges for seamless compositing.
-Color Spill: reduce any green or color cast on the foreground subject.
-Brightness / Contrast: separate sliders for foreground and background.
+- Optionally click “Pick Chroma Key Color” to open a window where you drag a bounding box around the background color to remove. The default is set to green (0, 255, 0).
 
-5.	Preview
-Click “Preview Composited Video” to watch the entire video with the background replaced.
-If “Reverse Background” is checked, the background video frames are played in reverse.
-Expect some delay of the preview video on lower-performing devices (final export after processing is standard speed).
+5. **Load Background**
 
-6.	Export
-Click “Export Composited Video” to render and save the final output.
+- Click “Load Background” and choose either Image or Video as the source.
+- If video, frames are preloaded for short background clips.
+- If image, it remains static throughout the composite.
 
-## Compatibility
+7. **Adjust Sliders**
+
+- Tolerance: how wide the color range is around the chosen key color.
+- Edge Softness: the blur/feather around edges for seamless compositing.
+- Color Spill: reduce any green or color cast on the foreground subject.
+- Brightness / Contrast: separate sliders for foreground and background.
+
+9. **Preview**
+
+- Click “Preview Composited Video” to watch the entire video with the background replaced.
+- If “Reverse Background” is checked, the background video frames are played in reverse.
+- Expect some delay of the preview video on lower-performing devices (final export after processing is standard speed).
+
+11. **Export**
+- Click “Export Composited Video” to render and save the final output.
+
+---
+
+### Compatibility
 
 Mac, Windows, Linux
 
-## Credits & License
+---
+
+### Credits & License
 
 Author: Anelia Gaydardzhieva (https://github.com/Anelia1)
 
 (c) 2025, MIT License
 
-## Contact
+---
+
+### Contact
 
 For questions, suggestions, or contributions, please open an issue in this repository or reach out via GitHub. Feedback is welcomed to further showcase the potential of this Chroma Key Compositor Demo App.
