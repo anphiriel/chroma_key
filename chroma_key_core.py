@@ -3,7 +3,7 @@ chroma_key_core.py
 
 Core logic for chroma key compositing
 
-Author: Anelia Gaydardzhieva (https://github.com/Anelia1)
+Author: Anelia Gaydardzhieva (https://github.com/anphiriel)
 (c) 2025, MIT License 
 
 This module provides core routines for chroma-key (greenscreen) compositing,
