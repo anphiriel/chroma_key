@@ -3,7 +3,7 @@ chroma_key_gui.py
 
 Tkinter GUI for the Chroma Key Compositor demonstration
 
-Author: Anelia Gaydardzhieva (https://github.com/Anelia1)
+Author: Anelia Gaydardzhieva (https://github.com/anphiriel)
 (c) 2025, MIT License 
 
 GUI layer for demonstrating a Chroma Key Compositor using Tkinter
